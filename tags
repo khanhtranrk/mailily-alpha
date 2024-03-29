@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Account	structs/account.go	/^type Account struct {$/;"	t
+Account	structs/mail.go	/^type Account struct {$/;"	t
+Account	structs/mail/mail.go	/^type Account struct {$/;"	t
+Message	functions/sender.go	/^type Message struct {$/;"	t
+Message	functions/sender/sender.go	/^type Message struct {$/;"	t
+Send	functions/sender.go	/^func Send(message Message) error {$/;"	f
+Send	functions/sender/sender.go	/^func Send(message Message) error {$/;"	f
+account	structs/account.go	/^package account$/;"	p
+account	structs/mail.go	/^package account$/;"	p
+account_repository	repositories/account-repository.go	/^package account_repository$/;"	p
+account_service	services/account-service.go	/^package account_service$/;"	p
+getAll	repositories/account-repository.go	/^func getAll(db *sql.DB) ([]mail.Account, error) {$/;"	f
+getAll	services/account-service.go	/^func getAll() {$/;"	f
+mail	structs/mail/mail.go	/^package mail$/;"	p
+sender	functions/sender.go	/^package sender$/;"	p
+sender	functions/sender/sender.go	/^package sender$/;"	p
