@@ -1,9 +1,14 @@
 package main
 
 import (
+	"log"
+
 	"github.com/khanhtranrk/mailily-alpha/functions/sender"
 )
 
 func main() {
-	sender.Send()
+  err := sender.Send()
+  if err != nil {
+    log.Fatal(err)
+  }
 }

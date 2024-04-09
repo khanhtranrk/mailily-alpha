@@ -4,19 +4,24 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-Account	structs/account.go	/^type Account struct {$/;"	t
-Account	structs/mail.go	/^type Account struct {$/;"	t
-Account	structs/mail/mail.go	/^type Account struct {$/;"	t
-Message	functions/sender.go	/^type Message struct {$/;"	t
-Message	functions/sender/sender.go	/^type Message struct {$/;"	t
-Send	functions/sender.go	/^func Send(message Message) error {$/;"	f
-Send	functions/sender/sender.go	/^func Send(message Message) error {$/;"	f
-account	structs/account.go	/^package account$/;"	p
-account	structs/mail.go	/^package account$/;"	p
-account_repository	repositories/account-repository.go	/^package account_repository$/;"	p
-account_service	services/account-service.go	/^package account_service$/;"	p
-getAll	repositories/account-repository.go	/^func getAll(db *sql.DB) ([]mail.Account, error) {$/;"	f
-getAll	services/account-service.go	/^func getAll() {$/;"	f
-mail	structs/mail/mail.go	/^package mail$/;"	p
-sender	functions/sender.go	/^package sender$/;"	p
-sender	functions/sender/sender.go	/^package sender$/;"	p
+Account	internal/core/domain/account.go	/^type Account struct {$/;"	t
+Account	structs/account/account.go	/^type Account struct {$/;"	t
+AccountHandle	internal/adapter/amqp/account.go	/^type AccountHandle struct {$/;"	t
+AccountRepository	internal/core/port/account.go	/^type AccountRepository interface {$/;"	t
+AccountService	internal/core/port/account.go	/^type AccountService interface {$/;"	t
+CommandTree	internal/adapter/amqp/command_tree.go	/^type CommandTree struct {$/;"	t
+Exec	internal/adapter/amqp/account.go	/^func (ah *AccountHandle) Exec(mes string) (string error) {$/;"	f
+ListAccounts	internal/adapter/amqp/account.go	/^func ListAccounts(mes string, svc port.AccountService) (string, error) {$/;"	f
+NewAccountHandle	internal/adapter/amqp/account.go	/^func NewAccountHandle(svc port.AccountService) *AccountHandle {$/;"	f
+NewCommandTree	internal/adapter/amqp/command_tree.go	/^func NewCommandTree($/;"	f
+NewValidator	internal/adapter/amqp/validator.go	/^func NewValidator() *Validator {$/;"	f
+Validate	internal/adapter/amqp/validator.go	/^func (v *Validator) Validate(mes string) (string, error) {$/;"	f
+Validator	internal/adapter/amqp/validator.go	/^type Validator struct {$/;"	t
+account	structs/account/account.go	/^package account$/;"	p
+amqp	internal/adapter/amqp/account.go	/^package amqp$/;"	p
+amqp	internal/adapter/amqp/command_tree.go	/^package amqp$/;"	p
+amqp	internal/adapter/amqp/validator.go	/^package amqp$/;"	p
+domain	internal/core/domain/account.go	/^package domain$/;"	p
+main	main.go	/^func main() {$/;"	f
+main	main.go	/^package main$/;"	p
+port	internal/core/port/account.go	/^package port$/;"	p

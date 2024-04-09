@@ -1,0 +1,7 @@
+citizen_certificate:
+  id: 9584299589340934
+  name: MAILILY
+  contact_gate: mailily
+  legal_gate: https://localhost:8080
+  registrantion_date: 90843205830983045
+  active_date: 90843205830983045
